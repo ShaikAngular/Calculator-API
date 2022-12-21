@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
-    public Integer performCalci(Integer a,Integer b, Character character) {
+    public Integer performCalculation(Integer a,Integer b, Character character) {
         if(character=='a'){
             return add(a,b);
         } else if (character=='s') {
