@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
-    public Integer performCalculation(Integer a,Integer b, Character character) {
+    public Number performCalculation(Number a,Number b, Character character) {
         if(character=='a'){
             return add(a,b);
         } else if (character=='s') {
@@ -19,19 +19,19 @@ public class CalculatorServiceImpl implements CalculatorService {
             return 0;
     }
 
-    private Integer add(Integer a,Integer b){
-        return a+b;
+    private Number add(Number a,Number b){
+        return a.floatValue()+b.floatValue();
     }
 
-    private Integer sub(Integer a,Integer b){
-        return a-b;
+    private Number sub(Number a,Number b){
+        return a.floatValue()-b.floatValue();
     }
 
-    private Integer mul(Integer a,Integer b){
-        return a*b;
+    private Number mul(Number a,Number b){
+        return a.floatValue()*b.floatValue();
     }
 
-    private Integer div(Integer a,Integer b){
-        return a/b;
+    private Number div(Number a,Number b){
+        return a.floatValue()/b.floatValue();
     }
 }

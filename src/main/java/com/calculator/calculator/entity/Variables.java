@@ -1,7 +1,7 @@
 package com.calculator.calculator.entity;
 
 public class Variables {
-    public Integer firstValue;
-    public Integer secondValue;
+    public Number firstValue;
+    public Number secondValue;
     public Character flag;
 }

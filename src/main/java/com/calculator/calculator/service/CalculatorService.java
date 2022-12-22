@@ -4,5 +4,5 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface CalculatorService {
-    public Integer performCalculation(Integer a,Integer b, Character character);
+    public Number performCalculation(Number a,Number b, Character character);
 }

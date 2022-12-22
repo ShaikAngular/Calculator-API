@@ -15,7 +15,7 @@ public class CalculatorController {
     private CalculatorService calculatorService;
     @PostMapping("/calculate")
     public String getResult(@RequestBody @NotNull Variables variables){
-        return "The result is: "+calculatorService.performCalculation(variables.firstValue, variables.secondValue, variables.flag);
+        return "The result is: "+ calculatorService.performCalculation(variables.firstValue, variables.secondValue, variables.flag);
     }
 
 }
